@@ -46,9 +46,7 @@ function App() {
   };
 
   useEffect(() => {
-    return () => {
-      getTodos();
-    };
+    getTodos();
   }, []);
 
   return (
@@ -73,11 +71,10 @@ function App() {
               />
             );
           })}
-
-          {todos.length < 1 ? (
-            <p className="empty-state">No saved items!</p>
-          ) : null}
         </ul>
+        {todos.length < 1 ? (
+          <p className="empty-state">No saved items!</p>
+        ) : null}
       </main>
     </div>
   );

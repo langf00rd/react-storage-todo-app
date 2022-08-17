@@ -58,9 +58,11 @@ button:active{
 
 .todo-items {
   padding:0;
+  transform: rotate(180deg);
 }
 
 .todo-item {
+  transform: rotate(-180deg);
   padding: 10px 20px;
   box-shadow: 0 0 8px #dddddd70;
   border-radius: 15px;
