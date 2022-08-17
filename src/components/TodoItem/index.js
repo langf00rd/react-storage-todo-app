@@ -1,11 +1,14 @@
-const TodoItem=(props)=>{
-    const {content}=props
-    return (
-        <li className='todo-item'>
-        <p>{content}</p>
-        <p onClick={props.onRemove} className='remove-todo-btn'>&times;</p>
-        </li>
-    )
-}
+const TodoItem = (props) => {
+  const { content, onRemove } = props;
 
-export default TodoItem
+  return (
+    <li className="todo-item">
+      <p>{content}</p>
+      <p onClick={onRemove} className="remove-todo-btn">
+        &times;
+      </p>
+    </li>
+  );
+};
+
+export default TodoItem;
